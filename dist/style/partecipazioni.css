@@ -1,0 +1,178 @@
+.wed-logo {
+  height: 30vh;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+.wed-logo img {
+  position: absolute;
+  width: 100vw;
+  z-index: 1;
+  top: -20px;
+}
+.wed-logo h1 {
+  z-index: 2;
+}
+.wed-logo p {
+  z-index: 2;
+}
+
+.wed-navbar, .wed-navbar-bar {
+  min-height: 7vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.wed-navbar .wed-navbar-menu, .wed-navbar-bar .wed-navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wed-navbar .wed-navbar-menu a, .wed-navbar-bar .wed-navbar-menu a {
+  font-size: 30px;
+  font-family: "Tangerine", serif;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  margin: 20px;
+  color: #836953;
+}
+
+.wed-navbar-bar {
+  max-width: 85vw;
+  border-bottom: 1px solid #836953;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background-color: #f7e7ce;
+  background-image: none !important;
+  color: #836953;
+  height: 100%;
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title h1 {
+  font-size: 76px;
+  font-family: "Tangerine", serif;
+  color: #836953;
+  margin-bottom: 0;
+}
+.title p {
+  font-size: 48px;
+  font-family: "Tangerine", serif;
+  color: #836953;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-box .container {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 80% !important;
+}
+.container-box .container form .columns {
+  display: flex;
+  max-width: 100vw;
+  max-height: 100vh;
+  align-items: flex-start;
+}
+.container-box .container form .columns .col {
+  flex: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-box .container form .columns .col .form-group {
+  margin-bottom: 0;
+  width: 85%;
+}
+.container-box .container form .columns .col .form-group.title {
+  flex-direction: row;
+}
+.container-box .container form .columns .col .form-group.title .material-icons {
+  font-size: 18px;
+}
+.container-box .container form .columns .col .form-group input:focus ~ .control-label {
+  color: #f99171;
+}
+.container-box .container form .columns .col .form-group .bar::before {
+  background: #f99171;
+}
+.container-box .container form .columns .col .form-group #invitations-details,
+.container-box .container form .columns .col .form-group #family-details,
+.container-box .container form .columns .col .form-group #menu-details {
+  color: #836953;
+}
+.container-box .container form .columns .col .form-group select {
+  height: 1.9rem;
+  color: #836953;
+}
+.container-box .container form .columns .col .form-group select:focus ~ .control-label {
+  color: #f99171;
+}
+.container-box .container form .columns #invitations div.checkbox {
+  width: 100%;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+}
+.container-box .container form .columns #invitations div.checkbox input {
+  position: initial;
+}
+.container-box .container form .columns #invitations div.checkbox label > span {
+  color: #836953;
+}
+.container-box .container form .columns #invitations div.checkbox input:checked ~ .helper {
+  color: #f99171;
+}
+.container-box .container form .columns #invitations div.checkbox label:hover .helper {
+  color: #f99171;
+}
+.container-box .container form .columns #invitations div.checkbox .helper {
+  left: initial;
+}
+.container-box .container form .columns #invitations div.checkbox .helper::before,
+.container-box .container form .columns #invitations div.checkbox .helper::after {
+  background-color: #f99171;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.button-container .button {
+  width: 20vw;
+  background: #f99171;
+  color: #836953;
+  margin: 2em;
+  border: none;
+}
+.button-container .button:hover {
+  background: #ff521e;
+  color: #f7e7ce;
+}
+.button-container .button::before {
+  border-color: #ff521e;
+  color: #f7e7ce;
+}

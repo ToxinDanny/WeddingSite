@@ -1,0 +1,57 @@
+@use "variables" as *;
+
+@mixin html {
+  height: 100vh;
+}
+
+@mixin body {
+  background-color: $background;
+  background-image: none !important;
+  color: $color;
+  height: 100%;
+  margin: 0;
+}
+
+@mixin d-flex {
+  display: flex;
+}
+
+@mixin d-flex-column {
+  @include d-flex;
+  flex-direction: column;
+}
+
+@mixin align-center {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin d-flex-center {
+  @include d-flex;
+  @include align-center;
+}
+
+@mixin d-flex-center-column {
+  @include d-flex-column;
+  @include align-center;
+}
+
+@mixin wedding-font-style {
+  font-family: $font-family;
+  color: $color;
+}
+
+@mixin wedding-font-large {
+  font-size: $font-large;
+  @include wedding-font-style;
+}
+
+@mixin wedding-font-normal {
+  font-size: $font-normal;
+  @include wedding-font-style;
+}
+
+@mixin wedding-font-small {
+  font-size: $font-small;
+  font-family: $font-family;
+}

@@ -1,0 +1,24 @@
+@forward "logo";
+@forward "navbar";
+@use "mixins" as *;
+
+html {
+  @include html;
+}
+
+body {
+  @include body;
+}
+
+.title {
+  @include d-flex-center-column;
+
+  h1 {
+    @include wedding-font-large;
+    margin-bottom: 0;
+  }
+
+  p {
+    @include wedding-font-normal;
+  }
+}

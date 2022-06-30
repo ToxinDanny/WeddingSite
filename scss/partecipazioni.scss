@@ -1,0 +1,127 @@
+@forward "base";
+@use "mixins" as *;
+@use "variables" as *;
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-box {
+  width: 100%;
+  @include d-flex-center;
+
+  .container {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 80% !important;
+
+    form {
+      .columns {
+        @include d-flex;
+        max-width: 100vw;
+        max-height: 100vh;
+        align-items: flex-start;
+
+        .col {
+          flex: 33.33%;
+          @include d-flex-center-column;
+
+          .form-group {
+            margin-bottom: 0;
+            width: 85%;
+
+            &.title {
+              flex-direction: row;
+
+              .material-icons {
+                font-size: 18px;
+              }
+            }
+
+            input:focus ~ .control-label {
+              color: $primary;
+            }
+
+            .bar::before {
+              background: $primary;
+            }
+
+            #invitations-details,
+            #family-details,
+            #menu-details {
+              color: $color;
+            }
+
+            select {
+              height: 1.9rem;
+              color: $color;
+
+              &:focus ~ .control-label {
+                color: $primary;
+              }
+            }
+          }
+        }
+
+        #invitations {
+          div.checkbox {
+            width: 100%;
+            margin-top: 2.5rem;
+            margin-left: 2.5rem;
+
+            input {
+              position: initial;
+            }
+
+            label > span {
+              color: $color;
+            }
+
+            input:checked ~ .helper {
+              color: $primary;
+            }
+
+            label:hover .helper {
+              color: $primary;
+            }
+
+            .helper {
+              left: initial;
+            }
+
+            .helper::before,
+            .helper::after {
+              background-color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.button-container {
+  width: 100%;
+  @include d-flex;
+  justify-content: flex-end;
+
+  .button {
+    width: 20vw;
+    background: $primary;
+    color: $color;
+    margin: 2em;
+    border: none;
+
+    &:hover {
+      background: $primary-dark;
+      color: $background;
+    }
+
+    &::before {
+      border-color: $primary-dark;
+      color: $background;
+    }
+  }
+}
