@@ -12,6 +12,12 @@
   margin: 0;
 }
 
+@mixin body-flex {
+  @include body;
+  @include d-flex-column;
+  @include align-center;
+}
+
 @mixin d-flex {
   display: flex;
 }
@@ -23,17 +29,22 @@
 
 @mixin align-center {
   align-items: center;
+}
+
+@mixin justify-center {
   justify-content: center;
 }
 
 @mixin d-flex-center {
   @include d-flex;
   @include align-center;
+  @include justify-center;
 }
 
 @mixin d-flex-center-column {
   @include d-flex-column;
   @include align-center;
+  @include justify-center;
 }
 
 @mixin wedding-font-style {
