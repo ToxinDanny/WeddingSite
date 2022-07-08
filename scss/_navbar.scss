@@ -4,6 +4,7 @@
 .wed-navbar {
   min-height: 10vh;
   max-width: 100vw;
+  overflow: hidden;
   margin: 1rem;
   position: relative;
   display: flex;
@@ -15,6 +16,8 @@
 
     a {
       @include wedding-font-small;
+      float: left;
+      display: block;
       text-decoration-line: none;
       margin: 20px;
       color: $color;
@@ -26,4 +29,10 @@
   @extend .wed-navbar;
   max-width: 85vw;
   border-bottom: 1px solid $color;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
