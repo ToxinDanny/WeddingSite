@@ -1,0 +1,36 @@
+@use "variables" as *;
+
+.btn {
+    background-color: $primary;
+
+    &:hover {
+        background-color: $primary-light;
+    }
+
+    &:focus {
+        background-color: $primary-dark;
+    }
+}
+
+input:focus {
+    border-bottom: 1px solid $primary  !important;
+    -webkit-box-shadow: 0 1px 0 0 $primary  !important;
+    box-shadow: 0 1px 0 0 $primary  !important;
+
+    +label {
+        color: $primary  !important;
+    }
+}
+
+input[type=checkbox]:checked+span::before {
+    border-right: 2px solid $primary  !important;
+    border-bottom: 2px solid $primary  !important;
+}
+
+.dropdown-content {
+    li {
+        >span {
+            color: $primary  !important;
+        }
+    }
+}

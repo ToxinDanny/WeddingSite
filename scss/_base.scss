@@ -1,6 +1,8 @@
 @forward "logo";
 @forward "navbar";
+@forward "materialize-modifications";
 @use "mixins" as *;
+@use "variables" as *;
 
 html {
   @include html;
