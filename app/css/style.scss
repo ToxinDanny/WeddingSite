@@ -43,10 +43,10 @@
 
 /* #Variables
 ================================================== */
-$color: #8eaeba;
+$color: #e6956b;
 $text-color: #73777b;
 $sat-color: saturate($color, 6%);
-$color-overlay: darken($color, 33%);
+$color-overlay: darken(#ff9054, 33%);
 $section-bg-color: #f9f9f9;
 
 $font-family: "Poppins", sans-serif;
