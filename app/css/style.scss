@@ -7,6 +7,7 @@
 
 /* Table of Content
 ==================================================
+  #Imports
 	#Playfair Display Font
 	#Variables
 	#Mixins
@@ -30,6 +31,10 @@
 	#Footer
 	#Lightbox
 	#Media Queries */
+
+/* #Imports
+================================================== */
+@use "mystyle";
 
 /* #Playfair Display Font
 ================================================== */
@@ -449,7 +454,7 @@ section {
   text-align: center;
   margin: 0 auto 70px;
   position: relative;
-  font-size: 62pt;
+  font-size: 48pt;
   font-family: $highlight-ff;
   line-height: 0.7;
 

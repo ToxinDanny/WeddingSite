@@ -98,8 +98,22 @@
 
                     <li><a href="about-us.html">About Us</a></li>
 
-                    <li><a href="wedding-details.html">Wedding Details</a></li>
-
+                    <li class="dropdown">
+                      <a
+                        href="wedding-details.html"
+                        data-toggle="dropdown"
+                        data-hover="dropdown"
+                        >The Wedding<b class="caret"></b
+                      ></a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="wedding-details.html">Wedding Details</a>
+                        </li>
+                        <li>
+                          <a href="wedding-party.html">Wedding Party</a>
+                        </li>
+                      </ul>
+                    </li>
                     <li><a href="gallery.html">Gallery</a></li>
 
                     <li><a href="gift-registry.html">Registry</a></li>
@@ -164,29 +178,16 @@
                   </p>
 
                   <blockquote class="neela-quote small extra-margin">
-                    Please, confirm your attendance<br />on or before 24th of
-                    July
+                    Perfavore, conferma la tua presenza<br />entro il 30 Giugno
                   </blockquote>
 
                   <ul class="contact-info">
-                    <li><span>Phone:</span> +0012 345-6789-101</li>
+                    <li><span>Phone:</span> +39 3409633096</li>
                     <li>
                       <span>E-mail:</span>
-                      <a href="mailto:isabella.andrew@example.com"
-                        >isabella.andrew@example.com</a
+                      <a href="mailto:daniele.tulli93@gmail.com"
+                        >daniele.tulli93@gmail.com</a
                       >
-                    </li>
-                  </ul>
-
-                  <ul class="sn-icons">
-                    <li>
-                      <a href="#"><i class="fab fa-instagram-square"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter-square"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-facebook-square"></i></a>
                     </li>
                   </ul>
                 </div>
@@ -194,18 +195,30 @@
                 <!-- BEGIN CONTACT FORM -->
                 <div class="col-xl-6 col-lg-7">
                   <div class="form-wrapper no-shadow overflow neela-style">
-                    <h2 class="section-title">Will you Attend?</h2>
+                    <h2 class="section-title">Parteciperai?</h2>
 
                     <form id="form-rsvp" method="post" action="#">
-                      <div class="form-floating">
-                        <input
-                          type="text"
-                          name="Name"
-                          id="name"
-                          placeholder="Your Name*"
-                          class="form-control required fromName"
-                        />
-                        <label for="name">Your Name*</label>
+                      <div id="rsvp-name">
+                        <div class="form-floating">
+                          <input
+                            type="text"
+                            name="Name"
+                            id="name"
+                            placeholder="Il tuo Nome*"
+                            class="form-control required fromName"
+                          />
+                          <label for="name">Il tuo Nome*</label>
+                        </div>
+                        <div class="form-floating">
+                          <input
+                            type="text"
+                            name="Surname"
+                            id="surname"
+                            placeholder="Il tuo Cognome*"
+                            class="form-control required fromSurname"
+                          />
+                          <label for="surname">Il tuo Cognome*</label>
+                        </div>
                       </div>
 
                       <div class="form-floating">
@@ -227,9 +240,7 @@
                             name="Attend wedding"
                             id="attend_wedding_yes"
                           />
-                          <label for="attend_wedding_yes"
-                            >Yes, I will attend.</label
-                          >
+                          <label for="attend_wedding_yes">Si, ci sarò.</label>
                         </div>
 
                         <div class="form-check form-check-inline">
@@ -240,7 +251,7 @@
                             id="attend_wedding_no"
                           />
                           <label for="attend_wedding_no"
-                            >Sorry, I can't come.</label
+                            >Purtroppo non posso.</label
                           >
                         </div>
                       </div>
@@ -262,7 +273,7 @@
                           <option value="7">7</option>
                         </select>
 
-                        <label for="num_guests">Number of guests</label>
+                        <label for="num_guests">Numero di invitati</label>
                       </div>
 
                       <fieldset

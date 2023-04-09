@@ -1,4 +1,10 @@
 @charset "UTF-8";
+#rsvp-name {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 /*
 * Author: Wisely Themes
 * Author URI: http://www.wiselythemes.com
@@ -7,6 +13,7 @@
 */
 /* Table of Content
 ==================================================
+  #Imports
 	#Playfair Display Font
 	#Variables
 	#Mixins
@@ -30,6 +37,8 @@
 	#Footer
 	#Lightbox
 	#Media Queries */
+/* #Imports
+================================================== */
 /* #Playfair Display Font
 ================================================== */
 @font-face {
@@ -392,7 +401,7 @@ section {
   text-align: center;
   margin: 0 auto 70px;
   position: relative;
-  font-size: 62pt;
+  font-size: 48pt;
   font-family: "Playfair Display", serif;
   line-height: 0.7;
 }
