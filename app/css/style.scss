@@ -141,12 +141,12 @@ $pattern: url("../images/neela-pattern.png");
   );
 }
 
-#the-wedding {
-  @include background-image-retina(
-    "https://via.placeholder.com/1920x1080",
-    "png"
-  );
-}
+// #the-wedding {
+//   @include background-image-retina(
+//     "../images/site/thewedding-weddingdetails(2)",
+//     "jpeg"
+//   );
+// }
 
 #bridesmaids,
 #bmiadsgmen {
@@ -164,10 +164,7 @@ $pattern: url("../images/neela-pattern.png");
 }
 
 #giftregistry {
-  @include background-image-retina(
-    "https://via.placeholder.com/1920x1080",
-    "png"
-  );
+  @include background-image-retina("../images/site/registry", "jpg");
 }
 
 .page-header {
@@ -3100,7 +3097,7 @@ p.center {
 
   img {
     border: 20px solid #fff;
-    display: none;
+    // display: none;
   }
 
   &.flower {
