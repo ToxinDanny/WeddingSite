@@ -17,7 +17,8 @@ var hero_full_screen = true; //If true, the hero section will fit to screen size
 //HERO BACKGROUND SLIDESHOW IMAGES
 var slidehow_images = [
   "../images/site/homepage1.jpg",
-  "../images/site/thewedding-weddingdetails(2).jpeg",
+  "../images/site/homepage6.jpeg",
+  "../images/site/homepage3.jpg",
 ];
 
 //TIMELINE PARALLAX
